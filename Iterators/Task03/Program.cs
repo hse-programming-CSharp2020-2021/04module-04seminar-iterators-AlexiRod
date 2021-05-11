@@ -16,10 +16,10 @@ using System.Threading;
  * Не использовать yield.
  * 
  * Пример входных данных:
-3
-Banana Bill Bananovich
-Apple Alex Applovich
-Carrot Clark Carrotovich
+ * 3
+ * Banana Bill Bananovich
+ * Apple Alex Applovich
+ * Carrot Clark Carrotovich
  * 
  * Пример выходных данных:
  * Apple A.
@@ -47,6 +47,8 @@ namespace Task03
             var culture = new CultureInfo("ru-RU");
             Thread.CurrentThread.CurrentCulture = culture;
             Thread.CurrentThread.CurrentUICulture = culture;
+            Console.InputEncoding = Encoding.UTF8;
+            Console.OutputEncoding = Encoding.UTF8;
             try
             {
                 int N = 0;
